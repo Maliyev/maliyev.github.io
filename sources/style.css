@@ -21,6 +21,25 @@ a:hover {
    line-height: 18px;
 }
 
+.underline::after{
+   content:' ';
+   width: 0%;
+   height: 1px;
+   background-color: white;
+   position: absolute;
+   left: 0px;
+   bottom: 0px;
+   transition: width .2s ease-out;
+}
+
+.underline:hover::after{
+   width: 100%;  
+}
+
+.underline{
+   position: relative;
+}
+
 #logo{
    padding: 9px;
    width: 43px;
