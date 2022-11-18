@@ -14,12 +14,7 @@ a:hover {
    color:#c3bdb5;
    transition: color .3s linear;
 }
-#logo_span{
-   font-style: normal;
-   font-weight: 400;
-   font-size: 15px;
-   line-height: 18px;
-}
+
 
 .underline::after{
    content:' ';
@@ -38,6 +33,12 @@ a:hover {
 
 .underline{
    position: relative;
+}
+#logo_span{
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 18px;
 }
 
 #logo{
@@ -107,6 +108,13 @@ color: #303030;
    color: #fff;
 
 }
+.desing_container{
+
+}
+.design{
+   display: flex;
+   align-items: center;
+}
 .text_container{
    position: absolute;
    top: 36%;
@@ -149,6 +157,9 @@ color: #303030;
    background-size:cover;
    background-repeat: no-repeat;
 }
+.buy:hover ._buy{
+   color:#000;
+}
 .img span{
    margin-left: 37%;
    color: #fff;
@@ -167,14 +178,14 @@ color: #303030;
    width: 500px;
    height: 104px;
    left: 25%;
-   top: 401%;
+   top: 391%;
    font-size: 43px;
    line-height: 52px;
 }
 #design__img{
    position: absolute;
    left: 47%;
-   top: 407%;
+   top: 397%;
 }
 .text2{
    font-family: 'Inter';
@@ -190,35 +201,35 @@ color: #303030;
    width: 185px;
    height: 36px;
    left: 25%;
-   top: 422%;
+   top: 412%;
 }
 #design_text2{
    position: absolute;
    width: 172px;
    height: 54px;
    left: 25%;
-   top: 431%;
+   top: 421%;
 }
 #design_text3{
    position: absolute;
    width: 179px;
    height: 54px;
    left: 25%;
-   top: 443%;
+   top: 433%;
 }
 #design_text4{
    position: absolute;
    width: 179px;
    height: 54px;
    left: 25%;
-   top: 454%;
+   top: 444%;
 }
 .line1{
    position: absolute;
    width: 305px;
    height: 0px;
    left: 35%;
-   top: 424%;
+   top: 414%;
    border-bottom: 1px solid #8E8E8E;
 }
 .line2{
@@ -226,7 +237,7 @@ color: #303030;
    width: 305px;
    height: 0px;
    left: 35%;
-   top: 434%;
+   top: 424%;
    border-bottom: 1px solid #8E8E8E;
 }
 .line3{
@@ -234,7 +245,7 @@ color: #303030;
    width: 305px;
    height: 0px;
    left: 35%;
-   top: 446%;
+   top: 436%;
    border-bottom: 1px solid #8E8E8E;
 }
 .line4{
@@ -242,7 +253,7 @@ color: #303030;
    width: 305px;
    height: 0px;
    left: 35%;
-   top: 458%;
+   top: 448%;
    border-bottom: 1px solid #8E8E8E;
 }
 #colors{
@@ -250,7 +261,7 @@ color: #303030;
    width: 107px;
    height: 10px;
    left: 25%;
-   top: 464%;
+   top: 454%;
 }
 .last{
    width: 100%;
@@ -384,3 +395,48 @@ footer{
    display: flex;
    justify-content: space-around;
 }
+.how_work_container p{ opacity:0; }
+
+.how_work:hover .how_work_container p{animation: opacity1 .8s 1 forwards;}
+.how_work:hover .how_work_container {animation: opacity1 .8s 1 forwards;}
+.how_work_container{opacity: 0;}
+@keyframes opacity1{
+   0%{
+      opacity:0;
+   }
+   100%{
+      opacity:1;
+   }
+}
+.about:hover .about_el1{
+   animation: opacity1 1s 1 forwards;
+}
+.about:hover .about_el2{
+   animation: opacity1 1s .2s 1 forwards;
+}
+.about:hover .about_el3{
+   animation: opacity1 1s .4s 1 forwards;
+}
+.about:hover .about_el4{
+   animation: opacity1 1s .6s 1 forwards;
+}
+.about:hover .about_el5{
+   animation: opacity1 1s .8s 1 forwards;
+}
+.about:hover .about_el6{
+   animation: opacity1 1s 1s 1 forwards;
+}
+.about_el{
+   opacity: 0;
+}
+.img span {opacity: 0;}
+.img:hover ._img {animation: opacity1 1s 1 forwards;}
+
+.design>*{opacity: 0;}
+.design:hover #main_text{animation: opacity1 1s 1 forwards;}
+.design:hover #design__img{animation: opacity1 1s .1s 1 forwards;}
+.design:hover .column{animation: opacity1 1s 1 forwards;}
+
+.last>*{opacity: 0;}
+.last:hover .last_container p{animation: opacity1 1s 1 forwards;}
+.last:hover .last_container{animation: opacity1 1s 1 forwards;}
