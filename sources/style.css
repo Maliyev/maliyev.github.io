@@ -438,5 +438,4 @@ footer{
 .design:hover .column{animation: opacity1 1s 1 forwards;}
 
 .last>*{opacity: 0;}
-.last:hover .last_container p{animation: opacity1 1s 1 forwards;}
 .last:hover .last_container{animation: opacity1 1s 1 forwards;}
